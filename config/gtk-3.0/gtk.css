@@ -1,0 +1,636 @@
+/* This part is used for xfce4 (mainly panel) styling. */
+
+/* Top strip line */
+.xfce4-panel.background {
+	border-top: 1px solid rgba(0,0,0,0.5);
+	box-shadow: 0 1px rgba(255,255,255,0.25) inset;
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0.125), rgba(255,255,255,0));
+}
+
+/* Window Buttons */
+.tasklist button {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+    color: #ffffff;
+    text-shadow: none;
+    margin: 0 1px;
+}
+
+.tasklist button:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.875),
+                                      rgba(255,255,255,0.25));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+/* Docklike plugin */
+#docklike-plugin button {
+    padding: 0;
+    min-width: 58px;
+    border: 1px solid rgba(0,0,0,0);
+    transition: 500ms;
+    margin: 0px;
+}
+
+/* credit from a pling theme for solving my problems! *
+ * https://www.pling.com/p/2343514/ */
+#docklike-plugin button + button {
+  margin-left: -2px;
+}
+
+#docklike-plugin button:first-child {
+    margin-left: 0px;
+}
+
+#docklike-plugin button:last-child {
+    margin-right: 0px;
+}
+
+#docklike-plugin .open_group {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.25),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset;
+}
+
+#docklike-plugin .hover_group {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.25),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset;
+}
+
+#docklike-plugin .active_group {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.425),
+                                      rgba(255,255,255,0.125));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.25) inset;
+}
+
+#docklike-plugin .open_group .window_count {
+	margin: 0 2px;
+}
+
+/* Application menu for non-orb/classic style (took the css from bluementa). */
+
+/* #applicationmenu-button {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      @button_gradient_color_a,
+                                      @button_gradient_color_b);
+    border: 1px solid @borders;
+    padding: 0 6px;
+    margin: 1px;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: 500ms;
+}
+
+#applicationmenu-button:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      @button_active_gradient_color_a,
+                                      @button_active_gradient_color_b);
+    border: 1px solid #848484;
+} */
+
+/* Applications menu and whisker menu with an orb, based on PNG. */
+
+#applicationmenu-button {
+    background-image: url("./orb.png");
+    background-size: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 19px;
+    margin-right: 5px;
+    border: none;
+    border-image: none;
+    box-shadow: none;
+    transition: 500ms;
+}
+
+#applicationmenu-button image {
+    opacity: 0;
+}
+
+#applicationmenu-button:hover {
+    background-image: url("./orb-hover.png");
+    border: none;
+    border-image: none;
+    box-shadow: none;
+}
+
+#applicationmenu-button:checked {
+    background-image: url("./orb-checked.png");
+    border: none;
+    border-image: none;
+    box-shadow: none;
+}
+
+#whiskermenu-button {
+    background-image: url("./orb.png");
+    background-size: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 19px;
+    margin-right: 5px;
+    border: none;
+    border-image: none;
+    box-shadow: none;
+    transition: 500ms;
+}
+
+#whiskermenu-button image {
+    opacity: 0;
+}
+
+#whiskermenu-button:hover {
+    background-image: url("./orb-hover.png");
+    border: none;
+    border-image: none;
+    box-shadow: none;
+}
+
+#whiskermenu-button:checked {
+    background-image: url("./orb-checked.png");
+    border: none;
+    border-image: none;
+    box-shadow: none;
+}
+
+/* Applet tray customization here. Mostly for button hover/toggled/pressed. */
+
+#clock-button label {
+    padding: 0;
+    margin: 0;
+}
+
+#clock-button {
+    color: #ffffff;
+    margin-right: -18px;
+    padding: 0 2px;
+    border: 1px solid rgba(0,0,0,0);
+    padding: 0 4px;
+    transition: 500ms;
+}
+
+#clock-button:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+    padding: 0 4px;
+}
+
+#clock-button:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.625),
+                                      rgba(255,255,255,0.165));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+#xfce4-power-manager-plugin {
+    color: #ffffff;
+    border: 1px solid rgba(0,0,0,0);
+    transition: 500ms;
+}
+
+#xfce4-power-manager-plugin:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+#xfce4-power-manager-plugin:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.625),
+                                      rgba(255,255,255,0.165));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+/* Show desktop styled to Windows 7 like (no button, a simple box with some 
+ * styling). */
+
+#showdesktop-button {
+    background-image: linear-gradient(to bottom, 
+				      rgba(255,255,255,0.25), 
+				      rgba(255,255,255,0) 33.75%),
+		      linear-gradient(to bottom,
+                                      rgba(0,0,0,0.375),
+                                      rgba(0,0,0,0.0625) 100%);
+    border: 1px solid rgba(0,0,0,0.375);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset;
+    margin: 0;
+    border-radius: 0;
+    margin-left: 20px;
+    transition: 500ms;
+}
+
+#showdesktop-button image {
+    opacity: 0;
+}
+
+#showdesktop-button:hover {
+    background-image: linear-gradient(to bottom, 
+				      rgba(255,255,255,0.5), 
+				      rgba(255,255,255,0) 25%),
+		      linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(255,255,255,0.25) 100%);
+}
+
+#xfce4-clipman-plugin {
+    border: 1px solid rgba(0,0,0,0);
+    background-image: url("./clipboard.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#xfce4-clipman-plugin image {
+    opacity: 0;
+}
+
+#xfce4-clipman-plugin:hover {
+    background-color: transparent;
+    background-image: url("./clipboard.png"), linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 500ms;
+}
+
+#xfce4-clipman-plugin:checked {
+    background-color: transparent;
+    background-image: url("./clipboard.png"), linear-gradient(to bottom,
+                                      rgba(255,255,255,0.625),
+                                      rgba(255,255,255,0.165));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 500ms;
+}
+
+#pulseaudio-button {
+    border: 1px solid rgba(0,0,0,0);
+    transition: 500ms;
+}
+
+#pulseaudio-button:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+#pulseaudio-button:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.625),
+                                      rgba(255,255,255,0.165));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+#sn-button {
+    border: 1px solid rgba(0,0,0,0);
+    transition: 500ms;
+    padding: 0px;
+}
+
+#sn-button:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+#sn-button:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.625),
+                                      rgba(255,255,255,0.165));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+#systray-6 widget {
+padding: 0px;
+}
+
+/* Give a slight styling to the system tray expander button toggle. */
+
+#systray-6 button.toggle {
+    border: 1px solid rgba(0,0,0,0);
+	transition: 500ms;
+	margin: 8px 0;
+}
+
+#systray-6 button.toggle:hover, #systray-6 button.toggle:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(255,255,255,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+#xfce4-notification-plugin {
+    border: 1px solid rgba(0,0,0,0);
+}
+
+#xfce4-notification-plugin:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+    transition: 500ms;
+}
+
+#xfce4-notification-plugin:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.625),
+                                      rgba(255,255,255,0.165));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+    transition: 500ms;
+}
+
+/* Gives an illusion that the width is small, but these applet don't actually 
+ * resize... */ 
+
+#xfce4-power-manager-plugin, #xfce4-clipman-plugin {
+    padding: 0;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+#xfce4-power-manager-plugin, #xfce4-clipman-plugin {
+    margin: 0 8px;
+}
+
+/* This one resizes for real. 
+ * PulseAudio plugin must in the center to give an illusion that the overall 
+ * width of the tray, otherwise it does not look good. I hope the devs added
+ * width size (pixels) so no need to fiddling around with the CSS. */
+
+#pulseaudio-button box {
+    margin: 0 -10px;
+}
+
+/* Makes the arrow color on system tray white. Symbolic icons may also uses
+ * white for this. */
+
+#systray-6 button {
+    color: #ffffff;
+}
+
+/* Try to replicate some parts of the Windows 7's start menu to the whisker
+ * menu window.
+
+ * Whisker menu background opacity is needed to not break the button background.
+
+ * If it works, don't touch it. */
+
+#whiskermenu-window {
+    background-color: #000;
+    background-image: linear-gradient(to bottom, #404040, #000000) !important;
+    color: #ffffff;
+    box-shadow: inset  0px  2px alpha(shade(#fff, 1.00), 1.0),
+                inset  2px  0px alpha(shade(#fff, 1.00), 1.0),
+                inset -2px  0px alpha(shade(#fff, 1.00), 1.0),
+                inset  0px -2px alpha(shade(#fff, 1.00), 1.0);
+}
+
+#whiskermenu-window button {
+    color: #ffffff;
+    border: 1px solid transparent;
+    transition: 250ms;
+}
+
+#whiskermenu-window button:hover {
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+#whiskermenu-window button:checked {
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.625),
+                                      rgba(255,255,255,0.165));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+/* Workspace switcher? */
+.xfce4-panel widget grid button.flat.toggle {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+    transition: 500ms;
+    margin: 5px 1px 3px 1px;
+    padding: 0 1px;
+}
+
+.xfce4-panel widget grid button.flat.toggle:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+.xfce4-panel widget grid button.flat.toggle:checked {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.875),
+                                      rgba(255,255,255,0.25));
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+/* Sensors plugin (progress bar) */
+/* Fan RPM */
+#xfce4-sensors-plugin-18 levelbar.vertical .continuous {
+	max-width: 2px !important;
+	max-height: 20px !important;
+	min-width: 2px !important;
+	min-height: 20px !important;
+}
+
+#xfce4-sensors-plugin-18 levelbar trough {
+	padding: 0 !important;
+	background-image: linear-gradient(to bottom, #404040, #000000);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.25) inset;
+}
+
+#xfce4-sensors-plugin-18 levelbar block.filled {
+	background-image: linear-gradient(to bottom, #ff2000, #801000);
+    border-radius: 0;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.25) inset, 0 0 0 1px rgba(0,0,0,0.5) inset;
+    margin: -1px;
+}
+
+#xfce4-sensors-plugin-18 levelbar block.low {
+	background-image: linear-gradient(to bottom, #ffc000, #806000);
+    border-radius: 0;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.25) inset, 0 0 0 1px rgba(0,0,0,0.5) inset;
+    margin: -1px;
+}
+
+#xfce4-sensors-plugin-18 levelbar block.high {
+	background-image: linear-gradient(to bottom, #ff2000, #806000);
+}
+
+#xfce4-sensors-plugin-18 levelbar trough {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: -2px;
+    margin-right: -2px;
+    border: 1px solid #101010;
+    border-radius: 3px;
+}
+
+/* CPU Temperature */
+#xfce4-sensors-plugin-9 levelbar.vertical .continuous {
+	max-width: 2px !important;
+	max-height: 20px !important;
+	min-width: 2px !important;
+	min-height: 20px !important;
+}
+
+#xfce4-sensors-plugin-9 levelbar trough {
+	padding: 0 !important;
+	background-image: linear-gradient(to bottom, #404040, #000000);
+	box-shadow: 0 0 0 1px rgba(255,255,255,0.25) inset;
+}
+
+#xfce4-sensors-plugin-9 levelbar block.filled {
+	background-image: linear-gradient(to bottom, #ff2000, #801000);
+    border-radius: 0;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.25) inset, 0 0 0 1px rgba(0,0,0,0.5) inset;
+    margin: -1px;
+}
+
+#xfce4-sensors-plugin-9 levelbar block.low {
+	background-image: linear-gradient(to bottom, #0080ff, #004080);
+    border-radius: 0;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.25) inset, 0 0 0 1px rgba(0,0,0,0.5) inset;
+    margin: -1px;
+}
+
+#xfce4-sensors-plugin-9 levelbar block.high {
+	background-image: linear-gradient(to bottom, #ff2000, #004080);
+}	
+
+#xfce4-sensors-plugin-9 levelbar trough {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: -2px;
+    margin-right: -2px;
+    border: 1px solid #101010;
+    border-radius: 3px;
+}
+
+
+/* GPU Temperature */
+#xfce4-sensors-plugin-19 levelbar.vertical .continuous {
+	max-width: 2px !important;
+	max-height: 20px !important;
+	min-width: 2px !important;
+	min-height: 20px !important;
+}
+
+#xfce4-sensors-plugin-19 levelbar trough {
+	padding: 0 !important;
+	background-image: linear-gradient(to bottom, #404040, #000000);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.25) inset;
+}
+
+#xfce4-sensors-plugin-19 levelbar block.filled {
+	background-image: linear-gradient(to bottom, #ff2000, #801000);
+    border-radius: 0;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.25) inset, 0 0 0 1px rgba(0,0,0,0.5) inset;
+    margin: -1px;
+}
+
+#xfce4-sensors-plugin-19 levelbar block.low {
+	background-image: linear-gradient(to bottom, #40ff00, #208000);
+    border-radius: 0;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.25) inset, 0 0 0 1px rgba(0,0,0,0.5) inset;
+    margin: -1px;
+}
+
+#xfce4-sensors-plugin-19 levelbar block.high {
+	background-image: linear-gradient(to bottom, #ff2000, #208000);
+}
+
+#xfce4-sensors-plugin-19 levelbar trough {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    margin-left: -2px;
+    margin-right: -2px;
+    border: 1px solid #101010;
+    border-radius: 3px;
+}
+
+
+/* Reduce the margin on xfdesktop4. */
+
+XfdesktopIconView.view {
+    -XfdesktopIconView-cell-spacing: 0;
+    -XfdesktopIconView-cell-padding: 5;
+    color: #ffffff;
+}
+
+/* End of xfce4 styling. */
