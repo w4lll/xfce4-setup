@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=a-bit-skeuomorphic-dark
+Comment=custom theme.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=a-bit-skeuomorphic-dark
+MetacityTheme=Blue-Submarine
+IconTheme=mate
+CursorTheme=mate
