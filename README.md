@@ -1,13 +1,13 @@
 # xfce4-setup
 My xfce4 setup/rice.
 
-Notes:
-- The icons are meant to be merged with [Tango2](https://www.pling.com/p/1180224/) icons.
-- The theme is still work in progress and may results in unwanted visuals.
-- GTK2 theme is currently not the same as GTK3.
-- Docklike plugin is used for this setup.
+> [!NOTE]
+> - The icons are meant to be merged with [Tango2](https://www.pling.com/p/1180224/) icons.
+> - The theme is still work in progress and may results in unwanted visuals.
+> - GTK2 theme is currently not the same as GTK3.
+> - Docklike plugin is used for this setup.
 
-Screenshots:
+## Screenshots:
 
 ![image](./preview/screenshot-1.png)
 
