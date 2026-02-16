@@ -15,3 +15,6 @@ GTK3 and GTK2 widgets:
 
 ![gtk3-wf](./preview/gtk3-widget-factory.png)
 ![awf-gtk2](./preview/awf-gtk2.png)
+
+## Credits
+- [Aerobird for Xfce](https://www.pling.com/p/2343514/) - Took some code related to spacing for docklike plugin.
