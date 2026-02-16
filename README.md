@@ -4,7 +4,8 @@ My xfce4 setup/rice.
 > [!NOTE]
 > - The icons are meant to be merged with [Tango2](https://www.pling.com/p/1180224/) icons. Do not use the icon as a standalone icon theme.
 > - The theme is still work in progress and may results in unwanted visuals.
-> - GTK2 theme is currently not the same as GTK3, expect inconsistency on GTK2.
+> - GTK2 theme is currently not the same as GTK3, expect inconsistencies.
+> - The icon size at the right side of the panel, tray icons, and status tray plugin is set to 16 px and squared items unchecked on the status tray plugin.
 > - [Docklike plugin](https://gitlab.xfce.org/panel-plugins/xfce4-docklike-plugin) and [picom](https://github.com/yshui/picom) is being used for this setup.
 
 ## Screenshots
