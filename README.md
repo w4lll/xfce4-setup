@@ -2,7 +2,7 @@
 My xfce4 setup/rice.
 
 > [!NOTE]
-> - The icons are meant to be merged with [Tango2](https://www.pling.com/p/1180224/) icons.
+> - The icons are meant to be merged with [Tango2](https://www.pling.com/p/1180224/) icons. Do not use the icon as a standalone icon theme.
 > - The theme is still work in progress and may results in unwanted visuals.
 > - GTK2 theme is currently not the same as GTK3, expect inconsistency on GTK2.
 > - [Docklike plugin](https://gitlab.xfce.org/panel-plugins/xfce4-docklike-plugin) is being used for this setup.
